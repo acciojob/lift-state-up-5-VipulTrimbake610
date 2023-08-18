@@ -15,11 +15,14 @@ const App = () => {
         {
           isLoggedIn===false &&
           <div className="child">
+            <form action="">
+
             <label htmlFor="">Username: </label>
             <input type="text" /><br /><br />
             <label htmlFor="">Password: </label>
             <input type="text" /><br /><br />
             <button onClick={()=>setIsLoggedIn(true)}>Login</button>
+            </form>
           </div>
         }
     </div>
