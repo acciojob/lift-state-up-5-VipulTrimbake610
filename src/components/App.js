@@ -7,17 +7,18 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        {
-          isLoggedIn &&
+          
           <div className="parent">
-            You are logged in!
+            <h1>Parent Component</h1>
+            {isLoggedIn && ("You are logged in!")}
           </div>
-        }
         {
           isLoggedIn===false &&
           <div className="child">
-            <input type="text" />
-            <input type="text" />
+            <label htmlFor="">Username: </label>
+            <input type="text" /><br /><br />
+            <label htmlFor="">Password: </label>
+            <input type="text" /><br /><br />
             <button onClick={()=>setIsLoggedIn(true)}>Login</button>
           </div>
         }
