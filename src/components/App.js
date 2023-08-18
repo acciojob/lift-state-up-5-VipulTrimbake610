@@ -10,7 +10,7 @@ const App = () => {
           
           <div className="parent">
             <h1>Parent Component</h1>
-            {isLoggedIn && ("You are logged in!")}
+            {isLoggedIn && <p>You are logged in!</p>}
           </div>
         {
           isLoggedIn===false &&
